@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #db4dff;
+  background-color: #31facbb1;
+  font: 15px Arial, sans-serif;
+}
+
+#wrapper{
+  max-width: 1480px;
+  min-width: 1200px;
+  margin: auto;
+  background-color: #eeccff;
+}
+
+header {
+  background-color: #eeccff;
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 150px;
+}
+
+h1 {
+  padding-top: 50px;
+  padding-left: 2em;
+}
+
+nav {
+  font-weight: bold;
+  padding: 1em;
+  background-color: inherit;
+  float: left;
+  width: 160px;
+}
+
+nav a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  border-style: outset;
+  border-color: #8d8d8d;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+nav a:link {
+  color: #9f31fab1;
+}
+
+nav a:visited {
+  color: #624dff;
+}
+
+nav a:hover {
+  color: #e8fa76;
+  border-style: inset;
+  border-color: #8d8d8d;
+  border-width: 3px;
+}
+
+nav ul {
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+main {
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-left: 170px;
+  padding-top: 1em;
+}
+
+.floatleft {
+  float: left;
+  margin-right: 4em;
+}
+
+.clear {
+  clear: both;
+}
+
+a:link { 
+  text-decoration: none; 
+}
+
+footer {
+  background-color: #eeccff;
+  text-align: center;
+  font-size: 0.60em;
+  font-style: italic;
+  clear: both;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #db4dff;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+th {
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #db4dff;
+}
+
+td {
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #db4dff;
+}
+
+tr {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #db4dff;
+}
+
+tr:nth-child(even) {
+  background-color: #ffccf7;
+}
+
+caption {
+  margin: 1em;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+label {
+  float: left;
+  display: block;
+  font-weight: bold;
+  width: 10em;
+  padding-right: 1em;
+  text-align: right;
+}
+
+input {
+  margin-bottom: 1em;
+}
+
+textarea {
+  margin-bottom: 1em;
+}
+
+#mySubmit {
+  margin-left: 13em;
+}
+
+#reset {
+  margin-left: 2em;
+}
+
+#Mobile {
+  display: none;
+}
+
+#Desktop {
+  display: inline;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+  #wrapper {
+    width: 100%;
+    min-width: 100px;
+    margin: 0px;
+    padding: 0px;
+  }
+  header {
+    padding-top: 1px;
+  }
+  h1 {
+    padding-top: 1em;
+  }
+  nav {
+    float: none;
+    width: auto;
+    padding-left: 2em;
+  }
+  nav a{
+    padding: 0.2em;
+    margin-left: 0.3em;
+    float: left;
+    width: 23%;
+  }
+  main{
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 0px;
+    font-size: 90%;
+    float: none;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  h2,h3,p, dl, main,ul {
+    padding-left: 2em;
+  }
+  .floatleft {
+    margin-left: 2em;
+    margin-bottom: 1em;
+    float: left;
+    width: 200px;
+  }
+  .clear {
+    padding-left: 2em;
+  }
+}
+
+@media screen and (max-width: 768px){
+  h1 {
+    font-size: 2em;
+    padding-top: 0.25em;
+    padding-left: 1.5em;
+    width: 85%;
+    text-align: center;
+  }
+  nav a {
+    padding: 0.5em;
+    margin-left: 0.5em;
+    float: left;
+    width: 35%;
+    min-width: 6em;
+  }
+  main {
+    padding-top: 0px;
+  }
+  .floatleft {
+    float: none;
+    display: none;
+  }
+  footer {
+    padding: 0.5em;
+    display: none;
+  }
+  #Mobile {
+    display: inline;
+  }
+  #Desktop {
+    display: none;
+  }
+  
+}
